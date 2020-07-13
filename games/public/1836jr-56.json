@@ -809,15 +809,17 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["A13"],
+          "track": [
             {
-              "side": 1
+              "side": 1,
+              "type": "offboard"
             },
             {
-              "side": 6
+              "side": 6,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["A13"]
+          ]
         },
         {
           "color": "plain",
@@ -1186,8 +1188,7 @@
               "companies": ["Nord"],
               "name": {
                 "name": "Lille",
-                "offset": 42,
-                "reverse": false
+                "offset": 42
               }
             }
           ],
@@ -1302,15 +1303,17 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["E3"],
+          "track": [
             {
-              "side": 4
+              "side": 4,
+              "type": "offboard"
             },
             {
-              "side": 5
+              "side": 5,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["E3"]
+          ]
         },
         {
           "color": "water",
@@ -1329,15 +1332,17 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["G1"],
+          "track": [
             {
-              "side": 4
+              "side": 4,
+              "type": "offboard"
             },
             {
-              "side": 5
+              "side": 5,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["G1"]
+          ]
         },
         {
           "color": "land",
@@ -1356,15 +1361,17 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["J2"],
+          "track": [
             {
-              "side": 3
+              "side": 3,
+              "type": "offboard"
             },
             {
-              "side": 4
+              "side": 4,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["J2"]
+          ]
         },
         {
           "color": "offboard",
@@ -1383,12 +1390,13 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["E13"],
+          "track": [
             {
-              "side": 1
+              "side": 1,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["E13"]
+          ]
         },
         {
           "color": "offboard",
@@ -1407,12 +1415,13 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["H12"],
+          "track": [
             {
-              "side": 1
+              "side": 1,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["H12"]
+          ]
         },
         {
           "color": "plain",
@@ -1464,15 +1473,17 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["K13"],
+          "track": [
             {
-              "side": 1
+              "side": 1,
+              "type": "offboard"
             },
             {
-              "side": 2
+              "side": 2,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["K13"]
+          ]
         }
       ],
       "borders": [
@@ -1574,10 +1585,8 @@
           ],
           "tokens": [
             {
-              "company": {
-                "color": "cyan",
-                "label": "LPS"
-              },
+              "color": "cyan",
+              "label": "LPS",
               "destination": true,
               "angle": 60,
               "percent": 0.75
@@ -1616,10 +1625,8 @@
           ],
           "tokens": [
             {
-              "company": {
-                "label": "THB",
-                "color": "yellow"
-              },
+              "label": "THB",
+              "color": "yellow",
               "destination": true,
               "angle": 225,
               "percent": 0.75
@@ -1667,10 +1674,8 @@
           ],
           "tokens": [
             {
-              "company": {
-                "color": "purple",
-                "label": "CV"
-              },
+              "color": "purple",
+              "label": "CV",
               "destination": true,
               "angle": 135,
               "percent": 0.75
@@ -1751,10 +1756,8 @@
           ],
           "tokens": [
             {
-              "company": {
-                "color": "pink",
-                "label": "CPR"
-              },
+              "color": "pink",
+              "label": "CPR",
               "destination": true,
               "angle": 225,
               "percent": 0.75
@@ -1794,8 +1797,7 @@
               ],
               "name": {
                 "name": "Lille",
-                "offset": 42,
-                "reverse": false
+                "offset": 42
               }
             }
           ],
@@ -1835,10 +1837,8 @@
           ],
           "tokens": [
             {
-              "company": {
-                "label": "GW",
-                "color": "brown"
-              },
+              "label": "GW",
+              "color": "brown",
               "destination": true,
               "percent": 0.8
             }
@@ -1849,10 +1849,8 @@
           "color": "offboard",
           "tokens": [
             {
-              "company": {
-                "color": "green",
-                "label": "GT"
-              },
+              "color": "green",
+              "label": "GT",
               "destination": true,
               "percent": 0.6
             }
@@ -1872,15 +1870,17 @@
               }
             ]
           },
-          "offBoardTrack": [
+          "hexes": ["K13"],
+          "track": [
             {
-              "side": 1
+              "side": 1,
+              "type": "offboard"
             },
             {
-              "side": 2
+              "side": 2,
+              "type": "offboard"
             }
-          ],
-          "hexes": ["K13"]
+          ]
         },
         {
           "color": "plain",

@@ -3,6 +3,7 @@
     "title": "1868",
     "subtitle": "Uruguay",
     "designer": "Eddie Robbins",
+    "publisher": "winsome",
     "background": "gray",
     "titleX": 900,
     "currency": "$#"
@@ -628,7 +629,6 @@
     "70": 1
   },
   "map": {
-    "print": "landscape",
     "hexes": [
       {
         "color": "plain",

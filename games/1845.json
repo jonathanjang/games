@@ -2253,7 +2253,8 @@
       "track": [
         {
           "side": 2,
-          "type": "stub"
+          "type": "straight",
+          "end": 0.125
         },
         {
           "side": 4,
@@ -2523,19 +2524,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "green",
-              "cost": "50"
+              "cost": 50
             },
             {
               "color": "brown",
-              "cost": "60"
+              "cost": 60
             },
             {
               "color": "gray",
-              "cost": "80"
+              "cost": 80
             }
           ]
         },
@@ -2574,19 +2575,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "green",
-              "cost": "50"
+              "cost": 50
             },
             {
               "color": "brown",
-              "cost": "80"
+              "cost": 80
             },
             {
               "color": "gray",
-              "cost": "100"
+              "cost": 100
             }
           ]
         },
@@ -2638,19 +2639,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "green",
-              "cost": "40"
+              "cost": 40
             },
             {
               "color": "brown",
-              "cost": "50"
+              "cost": 50
             },
             {
               "color": "gray",
-              "cost": "70"
+              "cost": 70
             }
           ]
         },
@@ -2708,19 +2709,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "20"
+              "cost": 20
             },
             {
               "color": "green",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "brown",
-              "cost": "40"
+              "cost": 40
             },
             {
               "color": "gray",
-              "cost": "80"
+              "cost": 80
             }
           ]
         },
@@ -2766,19 +2767,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "20"
+              "cost": 20
             },
             {
               "color": "green",
-              "cost": "40"
+              "cost": 40
             },
             {
               "color": "brown",
-              "cost": "50"
+              "cost": 50
             },
             {
               "color": "gray",
-              "cost": "60"
+              "cost": 60
             }
           ]
         },
@@ -2816,19 +2817,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "green",
-              "cost": "50"
+              "cost": 50
             },
             {
               "color": "brown",
-              "cost": "60"
+              "cost": 60
             },
             {
               "color": "gray",
-              "cost": "80"
+              "cost": 80
             }
           ]
         },
@@ -2967,21 +2968,19 @@
         "track": [
           {
             "side": 3,
-            "type": "stub"
+            "type": "straight",
+            "end": 0.125
           },
           {
             "side": 5,
-            "type": "stub"
+            "type": "straight",
+            "end": 0.125
           }
         ],
         "hexes": ["I23"]
       },
       {
         "color": "mountain",
-        "mountain": {
-          "size": "medium",
-          "cost": "15"
-        },
         "hexes": [
           "O19",
           "O39",
@@ -3010,6 +3009,13 @@
           "W21",
           "W23",
           "X24"
+        ],
+        "terrain": [
+          {
+            "size": "medium",
+            "cost": 15,
+            "type": "mountain"
+          }
         ]
       },
       {
@@ -3018,7 +3024,7 @@
           {
             "type": "river",
             "size": "medium",
-            "cost": "10"
+            "cost": 10
           }
         ],
         "hexes": [
@@ -3109,7 +3115,7 @@
           {
             "type": "river",
             "size": "medium",
-            "cost": "10",
+            "cost": 10,
             "angle": -30,
             "percent": 0.7
           }
@@ -3331,7 +3337,7 @@
           {
             "type": "river",
             "size": "medium",
-            "cost": "10",
+            "cost": 10,
             "angle": -30,
             "percent": 0.7
           }
@@ -3390,7 +3396,7 @@
             "label": "Société adMdl Loire",
             "angle": 0,
             "percent": 0.4,
-            "bottom": "true"
+            "bottom": true
           }
         ],
         "hexes": ["Q29"]
@@ -3421,7 +3427,7 @@
           {
             "type": "river",
             "size": "medium",
-            "cost": "10",
+            "cost": 10,
             "angle": -90,
             "percent": 0.7
           }
@@ -3641,19 +3647,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "green",
-              "cost": "40"
+              "cost": 40
             },
             {
               "color": "brown",
-              "cost": "50"
+              "cost": 50
             },
             {
               "color": "gray",
-              "cost": "60"
+              "cost": 60
             }
           ]
         },
@@ -3674,19 +3680,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "20"
+              "cost": 20
             },
             {
               "color": "green",
-              "cost": "20"
+              "cost": 20
             },
             {
               "color": "brown",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "gray",
-              "cost": "30"
+              "cost": 30
             }
           ]
         },
@@ -3736,19 +3742,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "20"
+              "cost": 20
             },
             {
               "color": "green",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "brown",
-              "cost": "40"
+              "cost": 40
             },
             {
               "color": "gray",
-              "cost": "70"
+              "cost": 70
             }
           ]
         },
@@ -3776,19 +3782,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "30"
+              "cost": 30
             },
             {
               "color": "green",
-              "cost": "50"
+              "cost": 50
             },
             {
               "color": "brown",
-              "cost": "60"
+              "cost": 60
             },
             {
               "color": "gray",
-              "cost": "80"
+              "cost": 80
             }
           ]
         },

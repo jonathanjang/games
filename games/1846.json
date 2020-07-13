@@ -3,9 +3,11 @@
     "title": "1846",
     "subtitle": "The Race for the Midwest",
     "designer": "Thomas Lehmann",
+    "publisher": "gmt",
     "background": "orange",
     "marketTokens": 2,
     "extraStationTokens": 3,
+    "capitalization": "incremental",
     "currency": "$#"
   },
   "links": {
@@ -77,26 +79,28 @@
     {
       "name": "Pennsylvania",
       "abbrev": "PRR",
+      "logo": "1846/PRR",
       "tokens": ["Free", 80, 80, 80, "$80*"],
       "color": "red"
     },
     {
       "name": "New York Central",
       "abbrev": "NYC",
+      "logo": "1846/NYC",
       "tokens": ["Free", 80, 80, 80],
       "color": "black"
     },
     {
       "name": "Baltimore & Ohio",
       "abbrev": "B&O",
-      "logo": "BO",
+      "logo": "1846/BO",
       "tokens": ["Free", 80, 80, "$80*"],
       "color": "blue"
     },
     {
       "name": "Chesapeake & Ohio",
       "abbrev": "C&O",
-      "logo": "CO",
+      "logo": "1846/CO",
       "tokens": ["Free", 80, 80, 80],
       "color": "lightBlue",
       "textColor": "black"
@@ -104,6 +108,7 @@
     {
       "name": "Erie",
       "abbrev": "ERIE",
+      "logo": "1846/ERIE",
       "tokens": ["Free", 80, 80, "$80*"],
       "color": "yellow",
       "textColor": "black"
@@ -111,12 +116,14 @@
     {
       "name": "Grand Trunk",
       "abbrev": "GT",
+      "logo": "1846/GT",
       "tokens": ["Free", 80, 80],
       "color": "orange"
     },
     {
       "name": "Illinois Central",
       "abbrev": "IC",
+      "logo": "1846/IC",
       "tokens": ["Free", 80, 80, "$80*"],
       "color": "green"
     }
@@ -270,27 +277,35 @@
       "name": "1",
       "train": "2",
       "limit": 4,
+      "rounds": 2,
       "tiles": "yellow"
     },
     {
       "name": "2",
       "train": ["3/5", "4"],
       "limit": 4,
+      "rounds": 2,
       "tiles": "green"
     },
     {
       "name": "3",
       "train": ["4/6", "5"],
       "limit": 3,
+      "rounds": 2,
       "tiles": "brown",
-      "events": { "close_companies": true }
+      "events": {
+        "close_companies": true
+      }
     },
     {
       "name": "4",
       "train": ["6", "7/8"],
       "limit": 2,
+      "rounds": 2,
       "tiles": "gray",
-      "events": { "remove_tokens": true }
+      "events": {
+        "remove_tokens": true
+      }
     }
   ],
   "pools": [
@@ -506,13 +521,15 @@
     "hexes": [
       {
         "color": "plain",
-        "tokens": [
+        "shapes": [
           {
-            "label": "$0 IC",
-            "angle": 180,
-            "percent": 0.75,
+            "type": "hexagon",
+            "text": "IC",
+            "textColor": "white",
             "color": "green",
-            "width": 18
+            "percent": 0.75,
+            "angle": 180,
+            "width": 36
           }
         ],
         "hexes": ["E5", "F6", "G5", "H6", "J4"]
@@ -620,10 +637,12 @@
       },
       {
         "color": "offboard",
-        "routeBonus": {
-          "value": "+20",
-          "percent": 0.5
-        },
+        "routeBonuses": [
+          {
+            "value": "+20",
+            "percent": 0.5
+          }
+        ],
         "labels": [
           {
             "angle": 180,
@@ -648,6 +667,7 @@
           "name": {
             "name": "Sarnia"
           },
+          "groups": ["East"],
           "revenues": [
             {
               "color": "yellow",
@@ -676,10 +696,12 @@
             "percent": 0.75
           }
         ],
-        "routeBonus": {
-          "value": "+50",
-          "percent": 0.5
-        },
+        "routeBonuses": [
+          {
+            "value": "+50",
+            "percent": 0.5
+          }
+        ],
         "labels": [
           {
             "label": "W",
@@ -775,10 +797,12 @@
       },
       {
         "color": "offboard",
-        "routeBonus": {
-          "value": "+30",
-          "percent": 0.5
-        },
+        "routeBonuses": [
+          {
+            "value": "+30",
+            "percent": 0.5
+          }
+        ],
         "labels": [
           {
             "angle": 180,
@@ -803,6 +827,7 @@
           "name": {
             "name": "Windsor"
           },
+          "groups": ["East"],
           "revenues": [
             {
               "color": "yellow",
@@ -849,6 +874,7 @@
             "percent": 0.75
           }
         ],
+        "encoding": "c=r:10,g:Chicago;c=r:10,g:Chicago;c=r:10,g:Chicago;c=r:10,g:Chicago;p=a:0,b:_0;p=a:3,b:_1;p=a:4,b:_2;p=a:5,b:_3;l=Chi",
         "icons": [
           {
             "type": "meat",
@@ -860,22 +886,26 @@
           {
             "revenue": 0,
             "side": 3,
-            "type": "stop"
+            "type": "straight",
+            "end": 0.25
           },
           {
             "revenue": 1,
             "side": 4,
-            "type": "stop"
+            "type": "straight",
+            "end": 0.25
           },
           {
             "revenue": 2,
             "side": 5,
-            "type": "stop"
+            "type": "straight",
+            "end": 0.25
           },
           {
             "revenue": 3,
             "side": 6,
-            "type": "stop"
+            "type": "straight",
+            "end": 0.25
           }
         ],
         "values": [
@@ -935,7 +965,7 @@
               }
             ],
             "name": {
-              "name": "ERIE",
+              "name": "Erie",
               "reverse": true,
               "offset": 63
             }
@@ -962,29 +992,44 @@
             "side": 6
           }
         ],
-        "labels": [
-          {
-            "angle": 330,
-            "percent": 0.25,
-            "label": "E"
-          }
-        ],
+        "offBoardRevenue": {
+          "hidden": true,
+          "groups": ["Buffalo", "East"],
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "30"
+            },
+            {
+              "color": "brown",
+              "cost": "60"
+            }
+          ]
+        },
         "removeBorders": [5],
-        "encoding": "o=yellow_30|brown_60;p=a:5,b:_0;l=E",
         "hexes": ["C21"]
       },
       {
         "color": "offboard",
-        "routeBonus": {
-          "value": "+30",
-          "angle": 150,
-          "percent": 0.45,
-          "label": "E"
-        },
+        "routeBonuses": [
+          {
+            "value": "+30",
+            "angle": 150,
+            "percent": 0.45,
+            "label": "E"
+          }
+        ],
         "track": [
           {
             "type": "offboard",
             "side": 1
+          }
+        ],
+        "labels": [
+          {
+            "angle": 150,
+            "percent": 0.5,
+            "label": "E"
           }
         ],
         "offBoardRevenue": {
@@ -993,6 +1038,7 @@
           "name": {
             "name": "Buffalo"
           },
+          "groups": ["Buffalo", "East"],
           "revenues": [
             {
               "color": "yellow",
@@ -1005,7 +1051,6 @@
           ]
         },
         "removeBorders": [2],
-        "encoding": "o=yellow_30|brown_60;p=a:0,b:_0;l=E",
         "hexes": ["D22"]
       },
       {
@@ -1084,10 +1129,12 @@
       },
       {
         "color": "offboard",
-        "routeBonus": {
-          "value": "+30",
-          "percent": 0.5
-        },
+        "routeBonuses": [
+          {
+            "value": "+30",
+            "percent": 0.5
+          }
+        ],
         "labels": [
           {
             "angle": 180,
@@ -1105,6 +1152,7 @@
           "name": {
             "name": "Binghamton"
           },
+          "groups": ["East"],
           "revenues": [
             {
               "color": "yellow",
@@ -1193,21 +1241,27 @@
       },
       {
         "color": "offboard",
-        "labels": [
-          {
-            "angle": 30,
-            "percent": 0.25,
-            "label": "E"
-          }
-        ],
         "track": [
           {
             "type": "offboard",
             "side": 1
           }
         ],
+        "offBoardRevenue": {
+          "hidden": true,
+          "groups": ["Pittsburgh", "East"],
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "30"
+            },
+            {
+              "color": "brown",
+              "cost": "70"
+            }
+          ]
+        },
         "removeBorders": [6],
-        "encoding": "o=yellow_30|brown_70;p=a:0,b:_0;l=E",
         "hexes": ["F22"]
       },
       {
@@ -1322,6 +1376,13 @@
       },
       {
         "color": "offboard",
+        "labels": [
+          {
+            "angle": 210,
+            "percent": 0.5,
+            "label": "E"
+          }
+        ],
         "tunnels": [
           {
             "cost": 20,
@@ -1339,17 +1400,20 @@
             "side": 2
           }
         ],
-        "routeBonus": {
-          "angle": 210,
-          "percent": 0.45,
-          "value": "+20"
-        },
+        "routeBonuses": [
+          {
+            "angle": 210,
+            "percent": 0.45,
+            "value": "+20"
+          }
+        ],
         "offBoardRevenue": {
           "angle": 210,
           "percent": 1,
           "name": {
             "name": "Pittsburgh"
           },
+          "groups": ["Pittsburgh", "East"],
           "revenues": [
             {
               "color": "yellow",
@@ -1362,7 +1426,6 @@
           ]
         },
         "removeBorders": [3],
-        "encoding": "o=yellow_30|brown_70;p=a:0,b:_0;p=a:1,b:_0;l=E",
         "hexes": ["G21"]
       },
       {
@@ -1391,10 +1454,12 @@
       },
       {
         "color": "offboard",
-        "routeBonus": {
-          "value": "+30",
-          "percent": 0.5
-        },
+        "routeBonuses": [
+          {
+            "value": "+30",
+            "percent": 0.5
+          }
+        ],
         "labels": [
           {
             "angle": 180,
@@ -1412,6 +1477,7 @@
           "name": {
             "name": "Cumberland"
           },
+          "groups": ["East"],
           "revenues": [
             {
               "color": "yellow",
@@ -1439,10 +1505,12 @@
             "percent": 0.75
           }
         ],
-        "routeBonus": {
-          "value": "+20",
-          "percent": 0.5
-        },
+        "routeBonuses": [
+          {
+            "value": "+20",
+            "percent": 0.5
+          }
+        ],
         "labels": [
           {
             "angle": 180,
@@ -1569,10 +1637,12 @@
             "side": 1
           }
         ],
-        "routeBonus": {
-          "value": "+20",
-          "percent": 0.5
-        },
+        "routeBonuses": [
+          {
+            "value": "+20",
+            "percent": 0.5
+          }
+        ],
         "labels": [
           {
             "angle": 180,
@@ -1584,6 +1654,7 @@
           "name": {
             "name": "Charleston"
           },
+          "groups": ["East"],
           "revenues": [
             {
               "color": "yellow",

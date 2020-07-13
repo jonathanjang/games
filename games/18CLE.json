@@ -3,6 +3,7 @@
     "title": "18CLE",
     "subtitle": "Trolly Car Compaines of Cleveland, Ohio",
     "designer": " Richard McGuire",
+    "publisher": "self",
     "background": "gray",
     "titleX": 50,
     "currency": "$#"
@@ -38,7 +39,7 @@
     }
   ],
   "tokenTypes": {
-    "default": ["Free", "$40", "$100"]
+    "default": ["Free", 40, 100]
   },
   "shareTypes": {
     "default": [
@@ -1654,7 +1655,7 @@
           {
             "type": "water",
             "percent": 0.667,
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "centerTowns": [
@@ -1671,7 +1672,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "hexes": ["L7"]
@@ -1692,7 +1693,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "hexes": ["I8"]
@@ -1702,7 +1703,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "hexes": ["K8"]
@@ -1735,22 +1736,24 @@
             }
           ]
         },
-        "offBoardTrack": [
+        "hexes": ["M8"],
+        "track": [
           {
-            "side": 3
+            "side": 3,
+            "type": "offboard"
           },
           {
-            "side": 4
+            "side": 4,
+            "type": "offboard"
           }
-        ],
-        "hexes": ["M8"]
+        ]
       },
       {
         "color": "plain",
         "terrain": [
           {
             "type": "water",
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "hexes": ["H9"]
@@ -1778,7 +1781,7 @@
           {
             "type": "water",
             "percent": 0.667,
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "centerTowns": [
@@ -1927,7 +1930,8 @@
         "color": "plain",
         "companies": [
           {
-            "percent": -0.667,
+            "angle": 180,
+            "percent": 0.667,
             "left": 15,
             "right": 15,
             "bottom": true,
@@ -1938,7 +1942,7 @@
           {
             "type": "water",
             "percent": 0.667,
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "centerTowns": [
@@ -2024,7 +2028,7 @@
           {
             "type": "water",
             "percent": 0.667,
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "centerTowns": [
@@ -2102,7 +2106,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50",
+            "cost": 50,
             "percent": 0.5
           }
         ],
@@ -2118,14 +2122,17 @@
             "dashed": true
           }
         ],
-        "names": {
-          "name": "Cuyahoga River",
-          "x": -15
-        },
+        "names": [
+          {
+            "name": "Cuyahoga River",
+            "x": -15
+          }
+        ],
         "companies": [
           {
             "label": "CV",
-            "percent": -0.8,
+            "angle": 180,
+            "percent": 0.8,
             "color": "blue",
             "rotate": 60,
             "left": 40,
@@ -2165,7 +2172,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50",
+            "cost": 50,
             "percent": 0.75
           }
         ],
@@ -2189,7 +2196,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "borders": [
@@ -2278,7 +2285,7 @@
           {
             "type": "water",
             "percent": 0.667,
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "centerTowns": [
@@ -2346,8 +2353,7 @@
         "labels": [
           {
             "label": "*ABC",
-            "y": -65,
-            "size": "small"
+            "y": -65
           }
         ],
         "hexes": ["O20"]
@@ -2380,7 +2386,7 @@
           {
             "type": "water",
             "percent": 0.667,
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "centerTowns": [
@@ -2409,7 +2415,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "borders": [
@@ -2492,7 +2498,7 @@
           {
             "type": "water",
             "percent": 0.667,
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "borders": [
@@ -2509,7 +2515,7 @@
         "terrain": [
           {
             "type": "water",
-            "cost": "$50"
+            "cost": 50
           }
         ],
         "borders": [
@@ -2706,7 +2712,8 @@
         ],
         "companies": [
           {
-            "percent": -0.667,
+            "angle": 180,
+            "percent": 0.667,
             "left": 15,
             "right": 15,
             "bottom": true,

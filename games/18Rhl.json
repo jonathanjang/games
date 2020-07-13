@@ -2726,6 +2726,7 @@
             "side": 5,
             "path": "m 0 85 C 15 63.75, 15 63.75, 0 42.5 C -15 21.25, -15 21.25, 0 0",
             "type": "custom",
+            "side": 2,
             "color": "water",
             "rotation": 30
           },
@@ -2796,6 +2797,7 @@
             "side": 5,
             "path": "m 0 85 C 15 63.75, 15 63.75, 0 42.5 C -15 21.25, -15 21.25, 0 0",
             "type": "custom",
+            "side": 2,
             "color": "water",
             "rotation": 30
           },
@@ -2868,6 +2870,7 @@
             "side": 5,
             "path": "m 0 85 C 15 63.75, 15 63.75, 0 42.5 C -15 21.25, -15 21.25, 0 0",
             "type": "custom",
+            "side": 2,
             "color": "water",
             "rotation": 30
           },

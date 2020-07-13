@@ -2,12 +2,14 @@
   "info": {
     "title": "1817",
     "designer": "Craig Bartell, Tim Flowers",
+    "publisher": "aag",
     "background": "gray",
     "titleX": 1740,
     "titleY": 620,
     "titleSize": 165,
     "subtitleSize": 17,
     "currency": "$#",
+    "capitalization": "incremental",
     "extraStationTokens": 4
   },
   "links": {
@@ -18,8 +20,19 @@
     "short": "pink"
   },
   "floatPercent": 20,
+  "tokens": [
+    {
+      "label": "+$10",
+      "icon": "coal",
+      "quantity": 6
+    },
+    {
+      "label": "+$10",
+      "icon": "tunnel",
+      "quantity": 3
+    }
+  ],
   "wip": true,
-  "tokens": [],
   "ipo": false,
   "bank": "∞",
   "players": [
@@ -322,10 +335,26 @@
   "stock": {
     "type": "1D",
     "market": [
-      { "subLabel": "Liquidation", "color": "red", "value": 0 },
-      { "subLabel": "Acquisition", "color": "gray", "value": 40 },
-      { "subLabel": "Acquisition", "color": "gray", "value": 40 },
-      { "subLabel": "Acquisition", "color": "gray", "value": 40 },
+      {
+        "subLabel": "Liquidation",
+        "color": "red",
+        "value": 0
+      },
+      {
+        "subLabel": "Acquisition",
+        "color": "gray",
+        "value": 40
+      },
+      {
+        "subLabel": "Acquisition",
+        "color": "gray",
+        "value": 40
+      },
+      {
+        "subLabel": "Acquisition",
+        "color": "gray",
+        "value": 40
+      },
       40,
       45,
       50,
@@ -419,22 +448,20 @@
       "values": [
         {
           "angle": 270,
-          "percent": 0.87,
+          "percent": 0.9,
           "value": 100
         }
       ],
       "labels": [
         {
-          "size": 20,
           "label": "NY",
-          "angle": 205,
-          "percent": 0.84
+          "angle": 90,
+          "percent": 0.9
         }
       ],
       "cities": [
         {
-          "size": 4,
-          "percent": 0.1
+          "size": 4
         }
       ],
       "track": [
@@ -561,7 +588,8 @@
           }
         ],
         "offBoardRevenue": {
-          "percent": -0.6,
+          "angle": 180,
+          "percent": 0.6,
           "revenues": [
             {
               "color": "yellow",
@@ -770,7 +798,8 @@
           }
         ],
         "offBoardRevenue": {
-          "percent": -0.5,
+          "angle": 180,
+          "percent": 0.5,
           "revenues": [
             {
               "color": "yellow",
@@ -852,21 +881,22 @@
         ],
         "track": [
           {
-            "type": "sharpStop",
+            "type": "sharp",
             "side": 3,
-            "revenue": 0
+            "revenue": 0,
+            "end": 0.5
           },
           {
-            "type": "sharpStop",
+            "type": "sharp",
             "side": 6,
-            "revenue": 1
+            "revenue": 1,
+            "end": 0.5
           }
         ],
         "hexes": ["E22"]
       },
       {
         "color": "gray",
-        "encoding": "p=a:3,b:j;p=a:4,b:j;p=a:5,b=j",
         "track": [
           {
             "side": 4
